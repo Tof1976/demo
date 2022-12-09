@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Begin....'
         echo 'Building..'
-        bat(script: 'mvn clean install', returnStatus: true, returnStdout: true)
+        bat 'mvn clean install'
         echo 'END...'
       }
     }
